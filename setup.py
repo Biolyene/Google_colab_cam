@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="colab_cam",
+    name="colabcam",
     version="0.2.0",
     description="Drop-in replacement for cv2 camera and imshow in Google Colab",
     author="Tee Yokky/Biolyene",

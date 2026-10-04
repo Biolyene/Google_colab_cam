@@ -4,7 +4,7 @@ setup(
     name="colabcam",
     version="0.1.0",
     description="A lightweight OpenCV camera capture tool tailored for Google Colab and tablets",
-    author="Your Name",
+    author="Tee Yokky",
     packages=find_packages(),
     install_requires=[
         "numpy",

@@ -24,7 +24,7 @@ ___
 
 ```
 
-##🚀 快速上手
+## 🚀 快速上手
 安装完成后，只需在代码最开头加入 import colabcam，剩下的代码完全按照教科书上标准的 OpenCV 语法书写即可：
 ```code
 import colabcam  # 👈 导入本库即可自动注入 OpenCV 补丁！
@@ -60,8 +60,9 @@ cv2.destroyAllWindows()
 print("摄像头已安全释放，处理结束。")
 
 ```
+___
+## 🌟 核心特性:
 
-🌟 核心特性
 ✨ 零学习成本：无需使用繁琐的 JavaScript 嵌入代码，继续使用 VideoCapture、read()、imshow() 与 waitKey()。
 📱 完美适配移动端与平板：
 完美支持 iPad（Safari）及 Android 平板。
@@ -78,15 +79,15 @@ cv2.VideoCapture(1) ➔ 默认调用后置镜头（适合平板扫描、拍摄�
 代码调用	对应镜头	适用场景
 cv2.VideoCapture(0)	前置镜头 (User / Selfie)	人脸识别、表情分析、手势追踪
 cv2.VideoCapture(1)	后置镜头 (Environment)	平板拍摄书本、物体检测、OCR 文字识别
----
-##⚠️ 常见问题排查 (FAQ)
+___
+## ⚠️ 常见问题排查 (FAQ)
 Q1：运行单元格后报错 NotReadableError: Could not start video source？
 * 原因：平板操作系统对摄像头独占要求极高。如果上一次运行未正常退出，或后台有其他 App（微信、相机等）占用了摄像头，系统就会拒绝访问。
 解决办法：直接刷新一下当前 Google Colab 的网页标签页（Refresh），即可强制释放被占用的摄像头硬件。
 Q2：为什么画面看起来比电脑端略有延迟？
 * 说明：因为视频帧需要经历 平板端抓拍 ➔ 网络传输至 Google 云端机房 ➔ OpenCV 处理 ➔ 传回平板 的过程。为了保证在平板网络下的流畅度，本库已自动将流媒体传输分辨率与压缩比优化到最佳平衡点。
----
-##📄 开源许可
+___
+## 📄 开源许可
 本项目基于 MIT License 开源。欢迎提交 PR 和 Issue！
 
 

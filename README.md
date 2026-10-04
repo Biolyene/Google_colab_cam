@@ -13,7 +13,7 @@
 
 **`Google_colab_cam`** 通过热补丁（Monkey Patch）无缝接管了底层调用，借助浏览器的 WebRTC 将平板/电脑的本地摄像头画面传输给 Python。**你无需重写或大幅改造 OpenCV 代码，就能获得像在本地电脑上一样的开发体验！**
 
----
+___
 
 ## 📦 安装方法
 
@@ -22,12 +22,11 @@
 ```bash
 !pip install --upgrade git+https://github.com/Biolyene/Google_colab_cam.git
 
----
+```
 
 ##🚀 快速上手
 安装完成后，只需在代码最开头加入 import colabcam，剩下的代码完全按照教科书上标准的 OpenCV 语法书写即可：
-code
-Python
+```code
 import colabcam  # 👈 导入本库即可自动注入 OpenCV 补丁！
 import cv2
 
@@ -59,6 +58,9 @@ while cap.isOpened():
 cap.release()
 cv2.destroyAllWindows()
 print("摄像头已安全释放，处理结束。")
+
+```
+
 🌟 核心特性
 ✨ 零学习成本：无需使用繁琐的 JavaScript 嵌入代码，继续使用 VideoCapture、read()、imshow() 与 waitKey()。
 📱 完美适配移动端与平板：

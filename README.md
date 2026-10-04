@@ -63,19 +63,19 @@ print("摄像头已安全释放，处理结束。")
 ___
 ## 🌟 核心特性:
 
-✨ 零学习成本：无需使用繁琐的 JavaScript 嵌入代码，继续使用 VideoCapture、read()、imshow() 与 waitKey()。
-📱 完美适配移动端与平板：
+### ✨ 零学习成本：无需使用繁琐的 JavaScript 嵌入代码，继续使用 VideoCapture、read()、imshow() 与 waitKey()。
+### 📱 完美适配移动端与平板: 
 完美支持 iPad（Safari）及 Android 平板。
 内置 playsinline 适配，解决移动端浏览器全屏或无法内联播放的问题。
-🔄 前后置镜头轻松切换：
+### 🔄 前后置镜头轻松切换: 
 cv2.VideoCapture(0) ➔ 默认调用前置/自拍镜头。
 cv2.VideoCapture(1) ➔ 默认调用后置镜头（适合平板扫描、拍摄外部环境）。
-⏹ 友好的交互式停止按钮：
+### ⏹ 友好的交互式停止按钮: 
 自动在视频预览区上方注入一个红色的 ⏹ 停止 按钮。
 点击按钮后，后端的 cv2.waitKey() 会自动接收到退出信号并打破 while 循环，彻底告别必须手动中断内核的尴尬。
-⚡ 低延迟与防闪烁：
+### ⚡ 低延迟与防闪烁: 
 采用 Jupyter 专属的 DisplayHandle 进行增量刷新，告别 clear_output() 带来的严重闪屏。
-⚙️ 参数与镜头映射
+### ⚙️ 参数与镜头映射: 
 代码调用	对应镜头	适用场景
 cv2.VideoCapture(0)	前置镜头 (User / Selfie)	人脸识别、表情分析、手势追踪
 cv2.VideoCapture(1)	后置镜头 (Environment)	平板拍摄书本、物体检测、OCR 文字识别
